@@ -5,7 +5,7 @@ import PersonList from './components/PersonList.component';
 import Status from './components/Status.component';
 import Heading from './components/Heading.component';
 import Oscar from './components/Oscar.component';
-
+import Button from './components/Button.components';
 
 function App() {
   const personName = {
@@ -36,6 +36,9 @@ function App() {
       <Oscar>
         <Heading>Oscar Goes To Space Since He is friends with Goku and the res of the shonen world.</Heading>
       </Oscar>
+      <Button handleClick={(event, id) => {
+        console.log('Buton Clicked', event, id)
+      }}/>
     </div>
   );
 }
