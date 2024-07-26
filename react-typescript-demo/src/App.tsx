@@ -3,6 +3,7 @@ import Greet from './components/Greet.component';
 import Person from './components/Person.component';
 import PersonList from './components/PersonList.component';
 import Status from './components/Status.component';
+import Heading from './components/Heading.component';
 
 function App() {
   const personName = {
@@ -29,7 +30,8 @@ function App() {
       <Greet name="Genesis" messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
-      <Status status='success'/> 
+      <Status status='success' /> 
+      <Heading>Place Holder Text</Heading>
     </div>
   );
 }
