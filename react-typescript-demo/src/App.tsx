@@ -6,6 +6,8 @@ import Status from './components/Status.component';
 import Heading from './components/Heading.component';
 import Oscar from './components/Oscar.component';
 import Button from './components/Button.components';
+import Input from './components/Input.components';
+
 
 function App() {
   const personName = {
@@ -38,7 +40,9 @@ function App() {
       </Oscar>
       <Button handleClick={(event, id) => {
         console.log('Buton Clicked', event, id)
-      }}/>
+      }} />
+      
+      <Input value='' handleChange={(event) => console.log(event)}/>
     </div>
   );
 }
