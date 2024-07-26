@@ -5,3 +5,4 @@ const Greet = () => {
         </div>
     )
 }
+export default Greet;
