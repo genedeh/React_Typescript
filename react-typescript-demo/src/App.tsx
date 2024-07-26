@@ -4,6 +4,8 @@ import Person from './components/Person.component';
 import PersonList from './components/PersonList.component';
 import Status from './components/Status.component';
 import Heading from './components/Heading.component';
+import Oscar from './components/Oscar.component';
+
 
 function App() {
   const personName = {
@@ -31,7 +33,9 @@ function App() {
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status='success' /> 
-      <Heading>Place Holder Text</Heading>
+      <Oscar>
+        <Heading>Oscar Goes To Space Since He is friends with Goku and the res of the shonen world.</Heading>
+      </Oscar>
     </div>
   );
 }
