@@ -7,7 +7,7 @@ import Heading from './components/Heading.component';
 import Oscar from './components/Oscar.component';
 import Button from './components/Button.components';
 import Input from './components/Input.components';
-
+import Container from './components/Container.components';
 
 function App() {
   const personName = {
@@ -42,7 +42,9 @@ function App() {
         console.log('Buton Clicked', event, id)
       }} />
       
-      <Input value='' handleChange={(event) => console.log(event)}/>
+      <Input value='' handleChange={(event) => console.log(event)} />
+      
+      <Container styles={{border: '1px solid black', padding: '1rem', margin:'1rem'}}/>
     </div>
   );
 }
