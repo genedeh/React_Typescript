@@ -10,6 +10,9 @@ import Input from './components/Input.components';
 import Container from './components/Container.components';
 import User from './components/state/User.components';
 
+import Box from './components/context/Box.components';
+import { ThemeContextProvider } from './components/context/ThemeContext.contexts';
+
 function App() {
   const personName = {
     first: "Genesis",
@@ -32,6 +35,9 @@ function App() {
   ]
   return (
     <div className="App">
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
       <User />
       <Greet name="Genesis" messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
