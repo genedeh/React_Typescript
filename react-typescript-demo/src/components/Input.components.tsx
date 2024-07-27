@@ -8,7 +8,7 @@ const Input = ({ value, handleChange }: InputProps) => {
         console.log(event.target.value)
     }
     return (
-        <input type="text" value={value} onChange={handleInputChange} />
+        <input type="text" value={value} onChange={handleChange} />
     )
 }
 
