@@ -8,6 +8,7 @@ import Oscar from './components/Oscar.component';
 import Button from './components/Button.components';
 import Input from './components/Input.components';
 import Container from './components/Container.components';
+import User from './components/state/User.components';
 
 function App() {
   const personName = {
@@ -31,20 +32,21 @@ function App() {
   ]
   return (
     <div className="App">
+      <User />
       <Greet name="Genesis" messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
-      <Status status='success' /> 
+      <Status status='success' />
       <Oscar>
         <Heading>Oscar Goes To Space Since He is friends with Goku and the res of the shonen world.</Heading>
       </Oscar>
       <Button handleClick={(event, id) => {
         console.log('Buton Clicked', event, id)
       }} />
-      
+
       <Input value='' handleChange={(event) => console.log(event)} />
-      
-      <Container styles={{border: '1px solid black', padding: '1rem', margin:'1rem'}}/>
+
+      <Container styles={{ border: '1px solid black', padding: '1rem', margin: '1rem' }} />
     </div>
   );
 }
