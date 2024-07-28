@@ -8,11 +8,13 @@ import Oscar from './components/Oscar.component';
 import Button from './components/Button.components';
 import Input from './components/Input.components';
 import Container from './components/Container.components';
-import User from './components/state/User.components';
+// import User from './components/state/User.components';
 
 import Box from './components/context/Box.components';
 import { ThemeContextProvider } from './components/context/ThemeContext.contexts';
 
+import User from './components/context/User.components';
+import { UserContextProvider } from './components/context/UserContext.contexts';
 function App() {
   const personName = {
     first: "Genesis",
@@ -38,7 +40,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
-      <User />
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
       <Greet name="Genesis" messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
